@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel ="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="favi.png">
+</head>
+
+<body>
+    <header class="header">
+        <a href="home" class="logo">Ana María
+        <span>Alzate</span></a>
+        <i class="bx bx-menu" id="icono-menu"></i>
+        
+        
+
+        <nav class="barra-navegacion">
+            <a href ="#home" class="nav enlace">SOBRE MI</a>
+            <a href="#education">ESTUDIOS</a>
+            <a href="#habilities">HABILIDADES</a>
+            <a href="#contact">CONTÁCTAME</a>
+
+        </nav>
+        
+    </header>
+        
+        
+    <section class="home" id="home">
+        <div class="contenido">
+            <h1>¡Hola!<h1> <span>
+            <h5>Bienvenido a mi portafolio.</h5></span>
+            
+            <div class ="contenido">
+                    <h6>Soy Ana María, </h6>
+                    <span class="teclado"></span>
+            </div>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            
+            <script>
+                var typed = new Typed(".teclado", {
+                    strings: ["Desarrolladora Fullstack en Python", "Ingeniera de producción"],
+                    typeSpeed: 150,
+                    backSpeed: 150,
+                    loop: true
+                    })
+            </script>
+            <p>Tengo 24 años y vivo en la ciudad de Medellín. Tengo fundamentos básicos de programación en HTML, CSS Y JS. </p>
+
+            <div class="redes-sociales">
+                <a href="https://github.com/Anamaalzate" class="github">
+                    <i class='bx bxl-github bx-flip-horizontal bx-spin'></i>
+                </a>
+                
+            </div>
+        </div> 
+            <div class="foto">
+                <img src="fotico.png" alt="">
+            </div>
+    </section>
+
+    <section class="education" id="education">
+            <h3 class="encabezado">ESTUDIOS</h3>
+
+                    <div class="linea-tiempo">
+                        <div class="container left-container"> 
+                            <img src="enyoi.png" alt="">
+                            <div class="contenido1">
+                                <h3>Enyoi</h3>
+                                <small>2018-2024</small>
+                                <p>Curso intensivo de progración Fullstack en Python</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="linea-tiempo">
+                        <div class="container right-container"> 
+                            <img src="itm.png" alt="">
+                            <div class="contenido1">
+                                <h3>Universidad</h3>
+                                <small>2018-2024</small>
+                                <p>Pregrado en Ingeniería de producción</p>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+<section class="habilities" id="habilities">
+    <h3 class="encabezado0">HABILIDADES</h3>
+    <div class="container0">
+        <div class="skills">
+            <h2>HTML</h2><span><i class='bx bxl-html5 bx-tada' style='color:#ffc7c7' ></i></span>
+            <div class ="progress-bar">
+                <div class ="html"><span>65%</span></div>
+            </div>
+            <h2>CSS</h2><span><i class='bx bxl-css3 bx-tada' style='color:#ffc7c7' ></i></span>
+            <div class ="progress-bar">
+                <div class ="css"><span>40%</span></div>
+            </div>
+            <h2>JavaScript</h2><span><i class='bx bxl-javascript bx-tada' style='color:#ffc7c7' ></i></span>
+            <div class ="progress-bar">
+                <div class ="JS"><span>10%</span></div>
+            </div>
+            <h2>Python</h2><span><i class='bx bxl-python bx-tada' style='color:#ffc7c7' ></i></span>
+            <div class ="progress-bar">
+                <div class ="python"><span>40%</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+<section class="contact" id="contact">
+    <h2 class="heading">CONTÁCTAME</h2>
+
+    <form action="https://formsubmit.co/anaalzatechavarriaga@gmail.com" method="POST">
+        <div class="input-group">
+            
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+        </div>
+
+        <div class="input-group">
+            
+            <div class="input-box">
+                <input type="tel" name="phone" placeholder="Número de contacto" required>
+                <input type="text" name="subject" placeholder="Asunto" required>
+            </div>
+        </div>
+
+        <div class="input-group-2">
+        
+            <textarea name="message" placeholder="Mensaje" cols="30" rows="10" required></textarea>
+            <button class="boton" type="submit">Enviar</button>
+            <div class="contacto5">
+                <a class='bx bxl-gmail bx-flashing' style='color:#ffc7c7'></a>
+                anaalzatechavarriaga@gmail.com
+            
+                
+                <a class='bx bxs-phone bx-flashing' style='color:#ffc7c7'></a>
+                +57 301 441 4014
+            
+            </div>
+            
+        </div>
+
+    </form>
+</section>
+    
+        
+<script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./main.js"></script>
+<footer>
+    <p> 2024 Mi Página Web</p>
+</footer
+</body>
+</html>

@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+:root{
+    --bg-color: #000000;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #ffc7c7;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color)
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 15% 4rem;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    background: url(marmol.jpg);
+    background-size: cover;
+    background-repeat: none;
+
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+.logo:hover{
+    transform: scale(1.1);
+
+}
+
+.barra-navegacion a{
+    font-size: 1.9rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 4px solid transparent;
+}
+
+.barra-navegacion a:hover{
+    color: var(--main-color);
+    border-bottom: 4px solid var(--main-color);
+}
+
+.boton{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    transition: 0.3s;
+}
+
+.boton:hover{
+    background: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color), 0 0 10px var(--main-color), 0 0 70px var(--main-color)
+}
+
+
+
+section{
+    min-height: 100vh;
+    padding: 20rem 20% 80rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.home h1{
+    font-size: 10px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.logo span{
+    color: var(--main-color);
+}
+
+.contenido h1{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.contenido h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.foto {
+    border-radius: 50%;
+}
+
+.foto img{
+    position:static;
+    top: 10rem;
+    width: 35rem;
+    height: 40rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin: 70;
+    
+}
+
+.foto img:hover{
+    box-shadow: 0 0 10px var(--main-color), 0 0 10px var(--main-color), 0 0 70px var(--main-color)
+}
+
+.contenido p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+.redes-sociales i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+.redes-sociales i:hover{
+    color: var(--main-color);
+    transform: scale(1.3)translate(5px);
+    box-shadow: 0 0 25px var(--main-color);   
+}
+
+span {
+    font-size: 38px;
+}
+
+.teclado {
+    
+    width: 300px;
+    height: 70px;
+    animation: cursor 0.9s infinite, typing 30s steps(14 infinite);
+}
+
+
+
+
+.encabezado{
+    font-size: 4rem;
+    text-align: center;
+    margin: 9rem 0;
+    color: var(--main-color);
+    
+}
+.encabezado:hover{
+    color: var(--main-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.education{
+    padding: 70px 15px;
+    background-color: var(--bg-color);
+
+}
+
+.educacation h2{
+    margin-bottom: 5rem;
+}
+
+
+.linea-tiempo{
+    position: relative;
+    max-width: 1200px;
+    margin: 80px auto;
+}  
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    border: solid var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 15%;
+}
+
+.container:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--main-color), 0 0 10px var(--main-color), 0 0 70px var(--main-color)
+}
+
+.contenido1{
+    padding: 20px 30px;
+    background: var(--bg-color);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.container left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    right: -20px;
+    top: 40px;
+    z-index: 10;
+}
+
+.right-container img{
+    left: -20px;
+}
+
+.linea-tiempo::after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: var(--main-color);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+
+
+
+.encabezado0{
+    font-size: 4rem;
+    text-align: center;
+    margin: 6rem 0;
+    color: var(--main-color);
+
+}
+
+.encabezado0:hover{
+    color: var(--main-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
+    
+
+}
+
+.container0{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color:var(--main-color);
+    font-size: 16px;
+
+}
+
+.skills{
+    width: 50%;
+    height: 130vh;
+    justify-content:center;
+    margin: 50%;
+    
+}
+
+.progress-bar{
+    background: #fef2f2;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    
+}
+
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar span{
+    font-size: small;
+}
+.html{
+    background: #ffc7c7;
+    animation: html 1s linear forwards;
+}
+
+.css{
+    background: #fea3a3;
+    animation: css 1s linear forwards;
+}
+
+.JS{
+    background: #fb6e6e;
+    animation: JS 1s linear forwards;
+}
+
+.python{
+    background: #f24141;
+    animation: python 1s linear forwards;
+}
+
+.html span{
+    border: 1px solid #ffe1e1;
+}
+
+.css span{
+    border: 1px solid #ffe1e1;
+}
+
+.JS span{
+    border: 1px solid #ffe1e1;
+}
+
+.python span{
+    border: 1px solid #ffe1e1;
+}
+
+@keyframes html{
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes css{
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes JS{
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes python{
+    100%{
+        width: 40%;
+    }
+}
+
+
+
+.habilities{
+    padding: 100px 15px;
+    
+
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+.contact{
+    background-color: var(--bg-color);
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+    color: var(--main-color);
+    font-size: 4rem;
+
+}
+
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.heading{
+    font-size: 6rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+
+.heading:hover{
+    color: var(--main-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--main-color);
+    background-color: var(--second-bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+}
+
+@media(max-wisth:1285px){
+    html{
+        font-size: 55%;
+    }
+    
+}
+
+.boton{
+    background-color: var(--main-color);
+}
+.boton :hover{
+    background-color: var(--main-color);
+}
+
+.contacto5{
+    font-size: 2rem;
+}
+
